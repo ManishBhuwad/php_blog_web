@@ -1,0 +1,157 @@
+html{
+    font-size: 16px;
+}
+
+
+#main{
+    width: 100%;
+    padding: 2%;
+    padding-bottom: 5%;
+    min-height: 100vh;
+    
+}
+
+.header{
+    box-shadow: 2px 2px 2px gray;
+    margin-bottom: 50px;
+   
+}
+
+#logoutbtn{
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#logoutbtn:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+.ps{
+    width: 70%;
+    display: flex;
+    /* height: 200px; */
+    padding: 1%;
+    margin: 20px auto;
+    border-bottom: 1px solid gray;
+}
+
+.post-wrap{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px gray;
+    padding: 2%;
+
+}
+
+
+.post-image{
+    aspect-ratio: 3/4;
+    margin: 0 auto;
+}
+.post-content-wrap{
+    position: relative;
+    width: 75%;  
+    height: 100%;
+    overflow: hidden;
+    /* border: 1px solid green; */
+}
+
+
+.post-content-wrap h3{
+    font-family: light;
+    font-weight: bold;
+    color: black;
+    opacity: .8;
+}
+
+.post-content-wrap p{
+    opacity: .8;
+}
+
+.ps-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-social-icon{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.post-social-icon i{
+    -webkit-text-fill-color: rgb(51, 54, 131) ;
+}
+
+
+.post-anc-div{
+    display: inline-block;
+    padding: 2px 5px;
+    /* background: -webkit-linear-gradient(left, rgb(51, 54, 131), #7c06af); */
+    margin-right: 10px;
+    /* background-color: gray; */
+    transition: all 1s ease;
+}
+
+.post-anc-div:hover{
+    background-color: gray;
+}
+.post-anc{
+    text-decoration: none;
+    color: black;
+}
+
+.post-anc:hover{
+    color: white;
+}
+
+
+@media screen and (max-width:600px){
+
+    #main{
+        width: 100%;
+        padding: 2%;
+        padding-bottom: 5%;
+        overflow: hidden;
+        min-height: 100vh;
+    }
+
+    .ps{
+        width: 100%;
+        display: flex;
+        height: fit-content;
+    }
+
+    .post-wrap{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 2px 2px 5px gray;
+    }
+
+    .post-image{
+        max-height: 120px;
+    }
+
+    .post-content-wrap{
+        position: relative;
+        width: 75%;  
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .ps-bottom{
+        position: relative;
+    }
+    
+}
